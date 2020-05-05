@@ -528,6 +528,9 @@
 				},
 				{
 					"include": "#python"
+				},
+				{
+					"include": "#css"
 				}
 			]
 		},
@@ -558,6 +561,16 @@
 			"patterns": [
 				{
 					"include": "source.python"
+				}
+			]
+		},
+		"css": {
+			"begin": "(?:^\\s*)<\\?css(?!.*\\?>)",
+			"end": "\\?>(?:\\s*$\\n)?",
+			"name": "source.css.embedded.html",
+			"patterns": [
+				{
+					"include": "source.css"
 				}
 			]
 		},
